@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Scan<span class="highlight">&</span>Dine</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/qr-code">QR Code</a>
+        </nav>
+        <div id="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu Categories</h2>
+            <div class="menu-categories">
+                <button class="category-button" data-category="Meals">Meals</button>
+                <button class="category-button" data-category="Express Combos">Express Combos</button>
+                <button class="category-button" data-category="Soups">Soups</button>
+                <!-- Add more category buttons as needed -->
+            </div>
+            <h3 id="selected-category">Meals</h3>
+            <div id="menu-items" class="menu-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Scan&Dine. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
